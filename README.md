@@ -39,10 +39,17 @@ Wykorzystuje `Parallel.For` do równoległego mnożenia macierzy. Liczba wątkó
 #### `MultiplyMatricesThreads`
 Realizuje mnożenie macierzy poprzez ręczne tworzenie i uruchamianie wątków (`Thread`). Działa na podziale zakresów wierszy i synchronizuje wykonanie za pomocą `Join()`.
 ![Image](https://github.com/user-attachments/assets/14843c4b-7e37-4e27-8725-622de98bb09f)
+
 ![Image](https://github.com/user-attachments/assets/45813067-4f8f-449a-a2d9-74ace735f77c)
 
 ### Kluczowe cechy
 - Obsługa wielu strategii przetwarzania równoległego: zarówno `Parallel.For`, jak i klasyczne wątki (`Thread`).
 - Możliwość dostosowania liczby wątków (`threadCount`) w celu testowania wydajności i skalowalności.
 
+## Wyniki
+![image](https://github.com/user-attachments/assets/4270daa4-990f-4e13-8367-1f9645dd838f)
+
+![image](https://github.com/user-attachments/assets/c54eef69-4b68-4535-bcf9-155ed36be707)
+
+![image](https://github.com/user-attachments/assets/7338ba04-5347-4f78-ab6c-d8b0afc595f9)
 
