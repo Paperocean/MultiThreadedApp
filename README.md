@@ -1,6 +1,7 @@
 ﻿# MultithreadedMatrixMultiplication
 
 ## Struktura projektu
+```
 Labs3/
 ├── .gitattributes
 ├── .gitignore
@@ -16,6 +17,7 @@ Labs3/
 │       └── MultiplyMatricesThreads
 ├── Program.cs
 └── README.md
+```
 
 ## MatrixOperations.cs – Operacje na macierzach z obsługą wielowątkowości
 
