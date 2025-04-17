@@ -25,18 +25,24 @@ Plik `MatrixOperations.cs` zawiera klasę `MatrixOperations`, która implementuj
 
 ### Dostępne metody
 
-#### `int[,] GenerateRandomMatrix(int rows, int cols)`
+#### `GenerateRandomMatrix`
 Generuje losową macierz o wymiarach `rows x cols`, wypełnioną liczbami całkowitymi z zakresu `0–9`.
 
-#### `int[,] MultiplyMatricesSingleThread(int[,] matrixA, int[,] matrixB)`
+#### `MultiplyMatricesSingleThread`
 Klasyczne mnożenie macierzy wykonywane w jednym wątku. Sprawdza się jako punkt odniesienia dla metod równoległych.
+![Image](https://github.com/user-attachments/assets/1f719929-6541-4d5b-aeb8-21fc010dcce9)
 
-#### `int[,] MultiplyMatricesParallel(int[,] matrixA, int[,] matrixB, int threadCount)`
+#### `MultiplyMatricesParallel`
 Wykorzystuje `Parallel.For` do równoległego mnożenia macierzy. Liczba wątków może być kontrolowana przez parametr `threadCount`.
+![Image](https://github.com/user-attachments/assets/5f3d671e-6a85-464d-872d-19ef861bffdc)
 
-#### `int[,] MultiplyMatricesThreads(int[,] matrixA, int[,] matrixB, int threadCount)`
+#### `MultiplyMatricesThreads`
 Realizuje mnożenie macierzy poprzez ręczne tworzenie i uruchamianie wątków (`Thread`). Działa na podziale zakresów wierszy i synchronizuje wykonanie za pomocą `Join()`.
+![Image](https://github.com/user-attachments/assets/14843c4b-7e37-4e27-8725-622de98bb09f)
+![Image](https://github.com/user-attachments/assets/45813067-4f8f-449a-a2d9-74ace735f77c)
 
 ### Kluczowe cechy
 - Obsługa wielu strategii przetwarzania równoległego: zarówno `Parallel.For`, jak i klasyczne wątki (`Thread`).
 - Możliwość dostosowania liczby wątków (`threadCount`) w celu testowania wydajności i skalowalności.
+
+
